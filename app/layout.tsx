@@ -16,6 +16,12 @@ export const metadata: Metadata = {
     locale: "ko_KR",
     images: ["/logo.png"],
   },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
 };
 
 export default function RootLayout({
@@ -25,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body>{children}</body>
+      <body className="min-h-screen w-full overflow-x-hidden">{children}</body>
     </html>
   );
 }

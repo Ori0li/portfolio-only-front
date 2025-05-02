@@ -4,7 +4,7 @@ nav {
   left: 0;
   width: 100%;
   background-color: #000000;
-  padding: 1rem;
+  padding: 0.8rem;
   z-index: 50;
   border-top: 1px solid #d4cdbb;
 }
@@ -12,7 +12,7 @@ nav {
 ul {
   display: flex;
   justify-content: center;
-  gap: 10rem;
+  gap: 3rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -20,10 +20,42 @@ ul {
 
 li a {
   color: #d4cdbb;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   transition: opacity 0.3s ease;
+  text-decoration: none;
+  padding: 0.5rem;
 }
 
 li a:hover {
   opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 0.6rem;
+  }
+
+  ul {
+    gap: 2rem;
+  }
+
+  li a {
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    padding: 0.5rem;
+  }
+
+  ul {
+    gap: 1.5rem;
+  }
+
+  li a {
+    font-size: 0.9rem;
+    padding: 0.3rem;
+  }
 }
