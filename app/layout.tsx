@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navigator from "@/components/layouts/Navigator";
 
 export const metadata: Metadata = {
   icons: {
@@ -8,6 +7,15 @@ export const metadata: Metadata = {
   },
   title: "JUN Portfolio",
   description: "박준용 포트폴리오 웹사이트",
+  keywords: ["개발자", "블로그", "포트폴리오", "프론트엔드", "웹개발"],
+  authors: [{ name: "JUNYONG_PARK" }],
+  openGraph: {
+    title: "JUN Portfolio",
+    description: "박준용 포트폴리오 웹사이트",
+    type: "website",
+    locale: "ko_KR",
+    images: ["/logo.png"],
+  },
 };
 
 export default function RootLayout({
