@@ -29,7 +29,7 @@
 
 .project-image-wrapper {
   flex: 1;
-  min-width: 800px;
+  min-width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,6 +37,7 @@
 
 .project-image {
   width: 100%;
+  max-width: 800px;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 1rem;
@@ -116,4 +117,48 @@
   background-color: #d4cdbb;
   border: 2px solid black;
   color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .project-container {
+    padding: 4rem 1rem;
+  }
+
+  .project-title {
+    font-size: 2rem;
+  }
+
+  .project-main {
+    gap: 1.5rem;
+  }
+
+  .project-image-wrapper {
+    min-width: 100%;
+  }
+
+  .project-image {
+    max-width: 100%;
+  }
+
+  .project-info {
+    min-width: 100%;
+  }
+
+  .skills-container,
+  .project-content {
+    padding: 1.5rem;
+  }
+
+  .skills-title,
+  .content-title {
+    font-size: 1.5rem;
+  }
+
+  .skill-tag {
+    font-size: 1rem;
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
 }
