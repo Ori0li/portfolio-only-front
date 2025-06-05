@@ -69,6 +69,16 @@ const projects: Project[] = [
     demo: "https://team-spotify-zeta.vercel.app/",
     tag: ["NextJS", "TypeScript", "FireBase", "Zustand", "Spotify API"],
   },
+  {
+    id: "8",
+    title: "RunBeat",
+    description:
+      "NextJS를 이용해 Feature-based를 기반으로 하여 파일 구성 후 디자인한 팀프로젝트로 FireBase를 연동해 DB구현을 하였으며 데이터는 Spotify API를 이용해 데이터를 수집하였고, Zustand를 활용해 각 함수들을 정리해 코드를 대폭으로 줄여 구현",
+    image: "runbeat.png",
+    github: "https://github.com/Ori0li/RunBeat",
+    demo: "https://drive.google.com/file/d/14cf9JYevNS9O5RKP6bo6RzqAMLw8L7h8/view?pli=1",
+    tag: ["NextJS", "TypeScript", "Mysql", "React-Native", "Expo"],
+  },
 ];
 
 export default projects;
